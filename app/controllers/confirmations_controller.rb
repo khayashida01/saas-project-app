@@ -44,7 +44,7 @@ class ConfirmationsController < Milia::ConfirmationsController
       end
     else
       log_action( "password set form" )
-      flas[:notice] = "please choose a password and confirm it"
+      flash[:notice] = "please choose a password and confirm it"
       prep_do_show()  # prep for the form
     end
     # else fall thru to show template which is form to set a password
